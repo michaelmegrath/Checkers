@@ -11,7 +11,10 @@ def main():
 	while running:
 		for event in pygame.event.get():
 			if event.type == pygame.QUIT:
+				pygame.display.quit()
 				running = False
+			elif event.type == pygame.MOUSEBUTTONUP:
+				pass
 
 
 
